@@ -1,0 +1,50 @@
+
+
+/*# sourceMappingURL=style.css.map */
+
+:root {
+  --size: 300px;
+}
+body {
+  background: rgba(1, 255, 255, 0.3);
+}
+
+.cube {
+  margin: 12rem auto 0;
+  width: var(--size);
+  height: var(--size);
+  transform-style: preserve-3d;
+  transform: rotateY(30deg) rotateZ(30deg);
+}
+
+.side {
+  position: absolute;
+  opacity: 0.8;
+  width: var(--size);
+  height:var(--size);
+}
+
+#front {
+  background: url(./media/basic-pics/1.jpg) no-repeat center/cover;
+  transform: translateZ(calc(var(--size) / 2));
+}
+
+#top {
+  background: url(./media/basic-pics/2.jpg) no-repeat center/cover;
+}
+
+#bottom {
+  background: url(./media/basic-pics/3.jpg) no-repeat center/cover;
+}
+
+#right {
+  background: url(./media/basic-pics/4.jpg) no-repeat center/cover;
+}
+
+#left {
+  background: url(./media/basic-pics/5.jpg) no-repeat center/cover;
+}
+
+#back {
+  background: url(./media/basic-pics/8.jpg) no-repeat center/cover;
+}
